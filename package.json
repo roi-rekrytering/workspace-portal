@@ -1,6 +1,6 @@
 {
   "name": "workspace-portal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Workspace portal React integration",
   "author": "Workspace Recruit",
   "license": "MIT",
@@ -24,7 +24,9 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "@types/react-helmet": "^6.1.6",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",

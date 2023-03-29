@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { WorkspacePortal } from '.'
 
-describe('ExampleComponent', () => {
+describe('WorkspacePortal', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(WorkspacePortal).toBeTruthy()
   })
 })

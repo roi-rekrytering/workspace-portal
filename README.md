@@ -13,18 +13,14 @@ npm install --save workspace-portal
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import { WorkspacePortal } from 'workspace-portal'
 
-import MyComponent from 'workspace-portal'
-import 'workspace-portal/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  const companyId = '712389345987134'
+  return <WorkspacePortal companyId={companyId}/>
 }
 ```
 
 ## License
 
-MIT © [Workspace Recruit](https://github.com/Workspace Recruit)
+MIT © [Workspace Recruit](https://github.com/roi-rekrytering/workspace-portal)

@@ -1,10 +1,14 @@
 import * as React from 'react'
-import styles from './styles.module.css'
+import Helmet from 'react-helmet'
 
-interface Props {
-  text: string
+interface WorkspacePortalProps {
+  companyId: string
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export const WorkspacePortal = ({ companyId }: WorkspacePortalProps) => 
+  <div>
+    <Helmet>
+      <script src={`https://app.workspacerecruit.com/api/publish/portal/js/${companyId}`}></script>
+    </Helmet>
+    <div id="careerportal"></div>
+  </div>
